@@ -120,15 +120,22 @@ public class UserController {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String response(@FormParam("uname") String uname,
 			@FormParam("email") String email, @FormParam("password") String pass) {
+<<<<<<< HEAD
 		String serviceUrl= "http://sw2-project.appspot.com/rest/RegistrationService";		
 	//	String serviceUrl = "http://localhost:8888/rest/RegistrationService";
+=======
+		String serviceUrl = "http://localhost:8888/rest/RegistrationService";
+>>>>>>> 744189d379ac5afc2a4709f859c954d8093db2a7
 		try {
 			URL url = new URL(serviceUrl);
 			String urlParameters = "uname=" + uname + "&email=" + email
 					+ "&password=" + pass;
 			HttpURLConnection connection = (HttpURLConnection) url
 					.openConnection();
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 744189d379ac5afc2a4709f859c954d8093db2a7
 			connection.setDoOutput(true);
 			connection.setDoInput(true);
 			connection.setInstanceFollowRedirects(false);
@@ -188,8 +195,12 @@ public class UserController {
 	@Produces("text/html")
 	public Response home(@FormParam("uname") String uname,
 			@FormParam("password") String pass) {
+<<<<<<< HEAD
 		String serviceUrl= "http://sw2-project.appspot.com/rest/LoginService";
 		//String serviceUrl = "http://localhost:8888/rest/LoginService";
+=======
+		String serviceUrl = "http://localhost:8888/rest/LoginService";
+>>>>>>> 744189d379ac5afc2a4709f859c954d8093db2a7
 		try {
 			URL url = new URL(serviceUrl);
 			String urlParameters = "uname=" + uname + "&password=" + pass;
@@ -202,7 +213,12 @@ public class UserController {
 			connection.setConnectTimeout(60000);  //60 Seconds
 			connection.setReadTimeout(60000);  //60 Seconds
 			
+<<<<<<< HEAD
 			connection.setRequestProperty("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+=======
+			connection.setRequestProperty("Content-Type",
+					"application/x-www-form-urlencoded;charset=UTF-8");
+>>>>>>> 744189d379ac5afc2a4709f859c954d8093db2a7
 			OutputStreamWriter writer = new OutputStreamWriter(
 					connection.getOutputStream());
 			writer.write(urlParameters);

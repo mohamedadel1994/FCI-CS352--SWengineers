@@ -7,7 +7,11 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <p> Welcome  ${it.name} </p>
+=======
+<p> Welcome b2a ya ${it.name} </p>
+>>>>>>> 744189d379ac5afc2a4709f859c954d8093db2a7
 <a href="/social/SearchForFriend">AddFriend</a> <br>
 <a href="/social/Accept">AcceptFriend</a> <br>
 <a href="/social/Signout">Sign out</a> <br>
