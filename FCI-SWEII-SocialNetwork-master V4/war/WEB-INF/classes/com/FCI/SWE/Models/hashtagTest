@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="hashtagTest">
+  <test name="hashtagTest">
+    <classes>
+      <class name="com.FCI.SWE.Models.Hashtagtest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
